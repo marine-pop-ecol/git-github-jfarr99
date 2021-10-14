@@ -1,0 +1,33 @@
+---
+title: "Assignment 1"
+author: "Jonathan Farr"
+date: "10/14/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+## Write in Markdown  
+
+Jonathan Farr
+**University of Alberta**
+*Blue*
+
+```{r}
+x = c(1,2,3)
+y =c(1,2,3)
+
+xy = data.frame(x, y)
+
+library(here)
+
+write.csv(xy, here("./data/student-data.csv"))
+
+
+```
+
+
